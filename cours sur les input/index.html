@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Les inputs</h1>
+
+    <form action="" method="post">
+      <div>
+        <label for="textInput">Input text</label>
+        <br />
+        <input
+          type="text"
+          name="textInput"
+          id="textInput"
+          placeholder="please enter some text"
+        />
+      </div>
+
+      <div>
+        <label for="mailInput">Input mail</label>
+        <br />
+        <input type="email" name="mailInput" id="mailInput" />
+      </div>
+
+      <div>
+        <label for="numberInput">Input number</label>
+        <br />
+        <input
+          min="10"
+          max="55"
+          step="5"
+          value="15"
+          type="number"
+          name="numberInput"
+          id="numberInput"
+        />
+      </div>
+
+      <div>
+        <label for="colorInput">Input color</label>
+        <br />
+        <input type="color" value="#e66465" name="colorInput" id="colorInput" />
+      </div>
+
+      <div>
+        <label for="dateInput">Input date</label>
+        <br />
+        <input
+          min="2022-10-04"
+          max="2022-30-04"
+          type="date"
+          value="2022-10-04"
+          name="dateInput"
+          id="dateInput"
+        />
+      </div>
+
+      <div>
+        <label for="datetime-localInput">Input datetime-local</label>
+        <br />
+        <input
+          type="datetime-local"
+          value="2022-10-04T00:00"
+          name="datetime-localInput"
+          id="datetime-localInput"
+        />
+      </div>
+
+      <div>
+        <label for="fileInput">Input file</label>
+        <br />
+        <input type="file" name="fileInput" id="fileInput" />
+      </div>
+
+      <div>
+        <label for="passwordInput">Input password</label>
+        <br />
+        <input
+          type="password"
+          minlength="5"
+          maxlength="15"
+          required
+          name="passwordInput"
+          id="passwordInput"
+        />
+      </div>
+
+      <div>
+        <label for="timeInput">Input time</label>
+        <br />
+        <input type="time" name="timeInput" id="timeInput" />
+      </div>
+
+      <div>
+        <label for="rangeInput">Input range</label>
+        <br />
+        <input type="range" name="rangeInput" id="rangeInput" />
+      </div>
+
+      <div>
+        <label for="checkboxInput">Input checkbox</label>
+        <br />
+        <input
+          type="checkbox"
+          checked
+          name="checkboxInput"
+          id="checkboxInput"
+        />
+      </div>
+
+      <div>
+        <input
+          accesskey="s"
+          type="submit"
+          name="submitInput"
+          id="submitInput"
+        />
+      </div>
+    </form>
+  </body>
+</html>

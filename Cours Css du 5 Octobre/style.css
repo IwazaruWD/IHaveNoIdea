@@ -1,0 +1,158 @@
+html{
+    font-size: 150%;
+    
+}
+
+.color-red{
+    color: red;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.margin-div{
+    margin-top: 10px;
+}
+
+.space01 {
+    margin: 0px 10px;
+    color: #F00;
+}
+
+.space02 {
+    border: 2px solid #000;
+    padding: 3px;
+}
+
+p{
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.space03{
+    margin: 1.5rem;
+
+}
+
+.space04{
+    text-indent: 3em;
+
+}
+
+.space04bis{
+    text-indent: 3rem;
+
+}
+
+.square{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
+
+.rectangle{
+
+    width: 10%;
+    height: 50px;
+    background-color: blue;
+}
+
+.div-mother-width{
+    width: 50%;
+    border: 1px solid black;
+}
+
+
+.rectangle-viewport{
+    background-color: orange;
+    height: 50px;
+    width: 50vw;
+}
+
+.b-radius{
+
+    border-radius: 25%;
+}
+
+.b-circle{
+
+    border-radius: 50%;
+}
+
+.ssquare-abs-parent{
+    position: relative;
+    
+}
+
+.square-abs{
+    position: relative;
+    
+    left: 25px;
+}
+
+.div-mother-relative{
+    width: 50%;
+    border: 1px solid black;
+    height: 200px;
+   
+}
+
+.div-mother-relative:hover .circle-relative {
+    top: 0;
+}
+
+.circle-relative{
+    position: relative;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    transition: all 1s;
+
+}
+
+.menu-fixed{
+    position: sticky;
+    background-color: cyan;
+    top: 0;
+    height: 75px;
+    width: 100vw;
+   
+}
+
+.deep{
+    z-index: -50;
+}
+
+.transform-square-translation{
+    transform: translate(10px);
+}
+
+.transform-square-rotation{
+    transform: rotate(45deg);
+}
+
+
+
+
+@keyframes bouncing{
+
+    from{
+        bottom: 0px;
+    }
+
+    to{
+        bottom: 50px;
+    }
+}
+
+.bouncing-ball{
+    background-color: orange;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: 50%;
+    border-radius: 50%; 
+    animation:  1s bouncing repeat;
+    bottom: 0;
+   
+   }

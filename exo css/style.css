@@ -1,0 +1,182 @@
+body{
+    background-color: bisque;
+}
+section{
+    margin: 0;
+}
+.under {
+    text-decoration: underline;
+}
+
+.color-red{
+    color: red;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.mt-3{
+    margin-top: 3em;
+}
+
+.ft-2{
+    font-size:2em;
+}
+
+.fl-red::first-letter{
+    color: red;
+}
+
+p.fl-red::first-letter{
+    font-size: 2em;
+}
+
+.spaced-span{
+    margin:1.3em;
+    font-size: 1.3em;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    text-decoration-line: underline;
+
+}
+
+
+label{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+label,
+input{
+display: block;
+margin: 0 auto;
+text-align: center;
+}
+input{
+    margin-bottom: 1em;
+}
+
+.margin-div{
+    margin-top: 10px;
+    height: 50px;
+}
+
+.red-rectangle{
+    width: 50%;
+    background-color: red;
+}
+
+.blue-ellipse{
+    background-color: blue;
+    width: 75%;
+
+    border-radius: 50%;
+
+}
+
+.green-rectangle{
+    width: 12.5%;
+    background-color: lime;
+}
+
+.black-rectangle{
+    background-color: black;
+    width: calc(100% - 30px);
+    
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 5px;
+
+}
+
+.purple-rectangle{
+    width: calc(100% - 10px);
+    margin: 10px 5px 0 5px;
+    background-color: #A40E2D;
+    border-top-right-radius: 40%;
+}
+
+.square3 {
+    width: auto;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.black-square{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: black;
+    margin: 0 10px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.img01 {
+    position: relative;
+    left: calc(100% - 300px);
+}
+
+.img02{
+    width: 20%;
+    position: relative;
+    left: 40%
+}
+
+#arrow{
+    position: absolute;
+    top: 75px;
+    height: 10px;
+    width: 25px;
+    left: 75%;
+    font-size: 3em;
+    transform: rotate(45deg);
+    border: 3px solid black;
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
+#arrow::after{
+    content:">";
+    font-size: 1.05em;
+    position:absolute;
+    left: 25px;
+    bottom: -24px;
+}
+
+#red-dot{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    background-color: red;
+    top: 96px;
+    left: 77.7%;
+    border-radius: 50%;
+}
+
+.equal{
+    font-size: 3em;
+    margin:0px;
+    position: absolute;
+    right: 25vw;
+    top: 13vh;
+    transform: rotate(45deg);
+}
+
+.equal::after{
+    content: ">";
+}
+
+.round{
+    position: absolute;
+    right: 24.5vw;
+    top: 17vh;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border-radius: 50%;
+}
