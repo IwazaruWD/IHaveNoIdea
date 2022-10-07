@@ -277,7 +277,8 @@ console.log(mySecondArray[476]);
 
 myFirstArray.push("Jeremy");
 console.log(myFirstArray);
-myFirstArray.push("Kévin.B");mySecondArray.indexOf("banane");
+myFirstArray.push("Kévin.B");
+mySecondArray.indexOf("banane");
 console.log(myFirstArray);
 myFirstArray.pop();
 console.log(myFirstArray);
@@ -290,10 +291,147 @@ myFirstArray.shift();
 console.log(myFirstArray);
 
 let index = mySecondArray.indexOf(2);
-console.log(index)
+console.log(index);
 
-mySecondArray.splice(1,1);
-console.log(mySecondArray)
+mySecondArray.splice(1, 1);
+console.log(mySecondArray);
 
-let banane = "une banane";
-console.log(banane[5]);
+let banana = "une banane";
+console.log(banana[5]);
+
+// Les objets
+
+var car = {
+  brand: "renault",
+  year: "2004",
+  power: 125,
+  show: function () {
+    console.log(
+      "Cette voiture est une " +
+        this.brand +
+        " de l'année " +
+        this.year +
+        " et a une puissance de " +
+        this.power +
+        "cv."
+    );
+  },
+};
+
+car.show();
+console.log(car.brand);
+
+// les boucles
+var iteration = 0;
+while (iteration < 7) {
+  console.log(iteration);
+
+  iteration++;
+}
+
+//for loop
+
+for (let i = 0; i < 12; i++) {
+  console.log(i);
+}
+
+for (let j = 0; j < mySecondArray.length; j++) {
+  console.log(mySecondArray[j]);
+}
+
+//do while loop
+
+let boucleDo = 5;
+
+do {
+  console.log(boucleDo);
+  boucleDo++;
+} while (boucleDo < 5);
+
+let iterationBreak = 0;
+
+while(iterationBreak < 80){
+  iterationBreak++;
+  console.log(iterationBreak);
+  iterationBreak++;
+  if(iterationBreak < 47){
+    break;
+  }
+}
+
+let test = 0;
+
+while ((test < 80) & (test < 47)) {
+  console.log(test);
+  test++;
+}
+
+function factor(number, total) {
+  if (number > 1) {
+    total *= number;
+
+    return factor(number - 1, total);
+  }
+
+  console.log(total);
+}
+
+factor(3, 1);
+factor(4, 1);
+factor(5, 1);
+factor(6, 1);
+
+function factorLoop(number) {
+  let total = 1;
+
+  while (number > 1) {
+    total *= number--;
+    //--number
+  }
+
+  console.log(total);
+}
+
+factorLoop(3);
+factorLoop(4);
+factorLoop(5);
+factorLoop(6);
+factorLoop(-5);
+factorLoop(0);
+
+function betterFactor(nbr) {
+  if (nbr === 0) {
+    return 1;
+  }
+  return nbr * betterFactor(nbr - 1);
+}
+
+console.log(betterFactor(6));
+
+var tableauA = ["Jeannette", "Alphonse", "George", "Ludwig"];
+var tableauB = ["Paul", "Frédéric", "Jacques", "Roger"];
+
+function concatArray(arr1, arr2) {
+  if (arr1.length != arr2.length) {
+    console.log("Les tableaux doivent être de la même taille");
+    return 0;
+  }
+
+  for (let i = 0; i < tableauA.length; i++) {
+    console.log(arr1[i] + " " + arr2[i]);
+  }
+
+}
+
+concatArray(tableauA, tableauB);
+concatArray(tableauA, ["Jean"]);
+
+let arrayOfArray = [[5,6],[7,8],[9,10,15]]
+
+for(let i = 0; i < arrayOfArray.length; i++){
+
+  for(let j = 0; j < arrayOfArray[i].length; j++){
+    console.log(arrayOfArray[i][j]);
+  }
+
+}

@@ -116,15 +116,17 @@ input{
     margin-left: 10px;
 }
 
-.img01 {
-    position: relative;
-    left: calc(100% - 300px);
+.img01div {
+    text-align: right;
+}
+
+.img02div{
+    text-align: center;
 }
 
 .img02{
     width: 20%;
-    position: relative;
-    left: 40%
+   
 }
 
 #arrow{

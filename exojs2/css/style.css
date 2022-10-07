@@ -1,0 +1,47 @@
+h1 {
+    transform: scale(-1, 1);
+    width: auto;
+    text-align: center;
+    text-decoration: overline;
+    text-decoration-thickness: 5px;
+}
+
+#mainDiv {
+    text-align: center;
+    margin-top: 200px;
+}
+
+#mainDiv :nth-child(2){
+    margin-left: 3px;
+}
+
+
+
+.innerDiv {
+    display: inline-block;
+    padding: 1em;
+    
+}
+nav{
+    background-color: #788799;
+    text-align: center;
+    padding: .5em 0;
+    margin-top: 100px;
+}
+
+ul{
+    padding-top: 10px;
+}
+
+li {
+    display: inline-block;
+    font-size: 3em;
+    margin-left: 110px;
+    margin-right: 240px;
+    font-weight: 600;
+}
+
+li a {
+    color: blue;
+    
+}
