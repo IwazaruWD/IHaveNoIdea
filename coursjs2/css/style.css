@@ -1,0 +1,12 @@
+.center{
+     margin: 0 auto;
+     text-align: center;
+     display: block;
+     margin-top: 2em;
+}
+
+#send{
+    background-color: purple;
+    color: white;
+    padding: 1em;
+}

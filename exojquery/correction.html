@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 class="center">Moyennes élèves</h1>
+
+    <h2 class="center" id="error">Les noms ne doivent pas être vides et la note doit être en 0 et 20.</h2>
+
+    <div class="center marge">
+        <label for="firstName">Prénom</label>
+        <input type="text" id="firstName" placeholder="Prénom de l'élève">
+    </div>
+    <div class="center marge">
+        <label for="name">Nom</label>
+        <input type="text" id="name" placeholder="Nom de l'élève">
+    </div>
+
+    <div class="center marge">
+        <label for="">Moyenne générale</label>
+        <input type="number" id="mean" placeholder="Note">
+    </div>
+
+    <div class="center marge">
+        <button id="btn">Envoyer</button>
+    </div>
+
+        <table id="tableau" align="center" class="marge"> 
+            <thead>
+                <tr>
+                    <td>Prénom</td>
+                    <td>Nom</td>
+                    <td>Moyenne</td>
+                </tr>
+            </thead>
+        </table>
+
+    <h3 class="center">Moyenne de la classe</h3>
+    <p class="center" id="meanClass"></p>
+
+
+    
+    <script src="js/jquery-3.6.1.js"></script>
+    <script src="js/correction.js"></script>
+
+   
+</body>
+</html>
